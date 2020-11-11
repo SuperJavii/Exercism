@@ -11,7 +11,7 @@ class PhoneBillTest extends FunSuite with Matchers {
   }
 
   test("bill with two numbers in maximum ") {
-    // should take the highest telephone number between two largest overall calls for free
+    // should take the highest telephone number between two largest overall call numbers for free
     PhoneBill.calculation("00:01:07,400-234-090\n00:05:01,400-234-090\n00:05:01,701-080-080\n00:01:07,701-" +
       "080-080\n00:05:01,701-080-081") should be (2001)
   }
